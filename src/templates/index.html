@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles-index.css')}}">
+
+<div class="slider-box">
+    <div class="slider">
+        <ul>
+            <li><img src="{{url_for('static', filename='img/img1.jpeg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/img2.jpg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/img3.jpeg')}}" alt=""></li>
+            <li><img src="{{url_for('static', filename='img/anime1.jpeg')}}" alt=""></li>
+        </ul>
+    </div>
+</div>
+<article>
+    <section>
+        <h2>plantillas recientes</h2>
+        <div class="gallery">
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/purpleBlog.png')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/img2.jpg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/img3.jpeg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/anime1.jpeg')}}" alt=""></a>
+            </div>
+            <div class="box-plantilla">
+                <a href=""><img src="{{url_for('static', filename='img/anime2.jpg')}}" alt=""></a>
+            </div>
+        </div>
+        
+    </section>
+</article>
+
+{% endblock %}

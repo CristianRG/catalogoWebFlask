@@ -1,0 +1,101 @@
+.slider-box{
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    
+}
+
+.slider {
+    width: 90%;
+    height: 280px;
+    margin: auto;
+    overflow: hidden; /*ocultar elementos qu esta fuera del padre */
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img{
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1B91EE;
+    text-align: center;
+    padding: 15px;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /*los elementos hijos permanecen en una sola linea o fluyen */
+    gap: 1rem; /* define la cuadricula donde se ubicaran los elementos */
+}
+
+.box-plantilla{
+    width: 370px;
+    min-width: 200px;
+    flex-grow: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: #000 2px;
+}
+
+.box-plantilla a{
+    text-decoration: none;
+    width: 0%;
+}
+
+.box-plantilla img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+}
